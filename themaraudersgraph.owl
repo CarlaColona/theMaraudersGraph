@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#"
+     xml:base="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:themaraudersgraph="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_ally_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_ally_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_close_friend_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_close_friend_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_enemy_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_enemy_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_prone_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_prone_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Side"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_used_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Is_used_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Character_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Character_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Incantation_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Incantation_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Attack_and_defence_spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Attack_and_defence_spell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Creature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Creature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Death_eater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Death_eater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Side"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Side"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Muggle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Muggle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Side -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Side"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Unforgivable_curse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Unforgivable_curse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Spell"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aberforth Dumbledore</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Accio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Accio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accio</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Avada_Kedavra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Avada_Kedavra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Unforgivable_curse"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avada Kedavra</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Death_eater"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bellatrix Lestrange</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Crucio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Crucio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Unforgivable_curse"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crucio</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Expecto_Patronum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Expecto_Patronum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Attack_and_defence_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expecto Patronum</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Expelliarmus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Expelliarmus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Attack_and_defence_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expelliarmus</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harry Potter</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermione Granger</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Imperio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Imperio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Unforgivable_curse"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imperio</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Lumos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Lumos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lumos</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Professor"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minerva McGonagall</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Obliviate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Obliviate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obliviate</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_close_friend_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Good"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ron Weasley</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Professor"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Severus Snape</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Stupefy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Stupefy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Attack_and_defence_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stupefy</Incantation_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Death_eater"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Normal_Sorcerer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Student"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vincent Crabbe</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Voldemort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Powerful_sorcerer"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Bellatrix_Lestrange"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Severus_Snape"/>
+        <Is_ally_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Vincent_Crabbe"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Aberforth_Dumbledore"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Hermione_Granger"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Minerva_McGonagall"/>
+        <Is_enemy_of rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Is_prone_to rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Evil"/>
+        <Character_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voldemort</Character_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Wingardium_Leviosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Wingardium_Leviosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Support_spell"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Harry_Potter"/>
+        <Is_used_by rdf:resource="http://www.semanticweb.org/lucatonti/ontologies/2020/6/themaraudersgraph#Ron_Weasley"/>
+        <Incantation_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wingardium Leviosa</Incantation_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
