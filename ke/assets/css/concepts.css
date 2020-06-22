@@ -1,0 +1,63 @@
+.highlight[property~="cosmo:brightness"]{
+	background-color: #b3e6b3
+}
+
+.highlight[property~="cosmo:equality"]{
+	background-color: #00FAFA
+}
+
+.highlight[property~="cosmo:movement"]{
+	background-color: #00FAFA
+}
+
+.highlight[property~="cosmo:mutability"]{
+	background-color: #00FAFA
+}
+
+.highlight[property~="cosmo:dustiness"]{
+	background-color: #00FAFA
+}
+
+.highlight[property~="cosmo:darkness"]{
+	background-color: #ffb3b3
+}
+
+.highlight[property~="cosmo:inertia"]{
+	background-color: #f62e38
+}
+
+.highlight[property~="cosmo:stillness"]{
+	background-color: #f62e38
+}
+
+.highlight[property~="cosmo:identity"]{
+	background-color: #fff0b3
+}
+
+.highlight[property~="cosmo:omission"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:opposition"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:repetition"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:series"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:similarity"]{
+	background-color: #feef5d
+}
+
+.highlight[property~="cosmo:symmetry"]{
+	background-color: #b3f0ff
+}
+
+.highlight[property~="cosmo:fictionalCharacter"]{
+	background-color:  #e6e6e6
+}
