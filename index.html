@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>The Marauder's Graph</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">The Marauder's Graph</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#preface">PREFACE</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">APPROACH</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#LA">Linguistic Analysis</a>
+                                <a class="dropdown-item" href="#TA">Textual Analysis</a>
+                                <a class="dropdown-item" href="#IOT">Identification of Themes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#QU">QUERIES</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ONT">ONTOLOGY</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">REFERENCES</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#HP">Harry Potter</a>
+                                <a class="dropdown-item" href="#UP">Useful Programs and Sites</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#TE">TEAM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <h4>Knowledge Representation And Extraction of J. K. Rowling's Masterpiece</h4>
+                <div class="masthead-heading text-uppercase">The Marauder's Graph</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#PRE">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Preface-->
+        <section class="page-section bg-light" id="preface">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" id="PRE">Preface</h2>
+                    <h3 class="section-subheading text-muted">This project aims to undertake a deep analysis of the magical world of Harry Potter, created by the british author J. K. Rowling, using as subject for discussion the 7th and final novel of the series, Harry Potter and the Deathly Hallows.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 justify">
+                        <p>We are gonna take into consideration 2 components that join almost all the characters: spells and origin of the name. These data will tell us a lot about their behaviour, their relationships and their alignment in the forces of good and evil. Names are important mostly because we can include even non-magical people in our analysis, or Muggles as they are referred to in the books, that would be ignored otherwise.
+                        <hr>
+                        This novel is one of the best-selling books of all time, and it is likely that many fans will find this work useful to better understand the mechanisms behind the most famous of all magic tales. Besides, it is an occasion for the readers who approach this story for the first time to know why youngsters now look at ancient esoteric figures like witches and sorcerers differently than before, since the books, at the time of their publication, have been credited with reawakening the interest in reading among the children.
+                        <hr>Finally, we have to realize that Rowling was deeply inspired by many happenings of her ordinary life: for instance, she built the figure of one of her main characters, Albus Dumbledore, on her former headmaster at St Michael's Primary School, Alfred Dunn, while her mother's death for multiple sclerosis made her pour her feelings into the same sentiments that tormented Harry, the protagonist, through all his adventures. This could provide futher justification to the aforesaid data. Said that, let's begin!</p>
+                    </div>
+                    <div class="col-sm-4 text-right"><img src="background_10.jpg" style="width: 67.5%;"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Approach-->
+        <section class="page-section" id="approach">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">APPROACH</h2>
+                    <h3 class="section-subheading text-muted">For a better comprehension, we carefully split every step of our analysis and gave it its own paragraph, so that it could be easier to describe how we managed to go through all the process.</h3>
+                </div>
+                <div class="justify">
+                    <h4 class="text-center" id="LA">Linguistic Analysis</h4>
+                <div class="row">
+                    <div class="col-sm-4 text-left"><img src="filler_06.png" style="width: 100%; margin-top: 20px;"></div>
+                    <div class="col-sm-8 justify">
+                        <br>
+
+                    <p>It is said that Rowling began to wrote her first chapter, Harry Potter and the Philosopher's Stone, in 1990, on a delayed train trip from Manchester to London. Here she thought of a little boy attending a school of wizardry for the first time. The authoress was facing a period of clinical depression and relative poverty back then, due to her divorce and the sudden necessity to look after her little daughter all alone. Even if initially rejected by many editors, the manuscript eventually managed to be published thanks to the publishing house Bloomsbury, located in London. From then on, the success obtained allowed Rowling to create 6 equally famous sequels, which would later be proposed for a film adaptation.</p>
+                    <hr>
+                    <p>Though she never openly attributed her inspiration to any author, Rowling mentioned a number of her personal favourites, like C. S. Lewis, Elizabeth Goudge and, above all, Jane Austen, declaring that her book Emma is her favourite one. Beyond literature, another strong influence has been Jessica Midford, a civil rights activist, whose adventurous and rebellious spirit made her a heroine during the Spanish Civil War. To make some other honorable mentions, Rowling used to read even Tolkien and Defoe.</p>
+                </div>
+                </div>
+                <hr>
+                <p>Other alleged sources of inspiration, according to some commentators, are the Iliad and the Bible, since in Rowling's writings we can find some passages which refer subliminally to concepts like Christ's resurrection, Christ's cross, the desecration of a body, the acknowledgment of the things that matter in life, and so on. Along with that, Rowling drew from British folklore and mythology, which are impure by her own admission. Britain has indeed been invaded many times during the past, leading the natives to absorb foreign religions and gods, culminating with one of the richest folklores in the world.</p>
+                    <hr>
+                    <p>In her early notes for the series, Rowling thought of over 40 names for students from Hogwarts (the school of witchcraft and wizardry where most of the series is set), along with names for spells and potions, any of them with historical and linguistic roots, oftenlatin-based. This can provide us with further information about what distinguishes a character from the others. Here we listed a set of 20 character names that we took into consideration for our etimological analysis.</p>
+                    <br>
+                    <table class="table table-striped text-center" style="border: solid;">
+                        <thead style="border: solid">
+                            <tr class="bg-warning" style="border: solid;">
+                                <th style="border: solid;">NAME</th>
+                                <th style="border: solid;">ETIMOLOGY</th>
+                                <th style="border: solid;">LANGUAGE SOURCE</th>
+                                <th style="border: solid;">MEANING</th>
+                            </tr>
+                        </thead>
+                        <tbody style="border: solid;">
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Harry Potter</td>
+                                <td style="border: solid;">Henry + Pote</td>
+                                <td style="border: solid;">Old English</td>
+                                <td style="border: solid;">Army ruler + Pushing</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Ron Weasley</td>
+                                <td style="border: solid;">Rögnvaldr + Weasel</td>
+                                <td style="border: solid;">Old norse + English</td>
+                                <td style="border: solid;">Decision ruler + Weasel (a common rodent)</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Albus Dumbledore</td>
+                                <td style="border: solid;">Albus + Dumbledore</td>
+                                <td style="border: solid;">Latin + Old English</td>
+                                <td style="border: solid;">White + Bumblebee</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Dolores Umbridge</td>
+                                <td style="border: solid;">Doleros + Umbra</td>
+                                <td style="border: solid;">Greek + Latin</td>
+                                <td style="border: solid;">Deceitful + Shadow, ghost</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Bellatrix Lestrange</td>
+                                <td style="border: solid;">Bellum + étrange</td>
+                                <td style="border: solid;">Latin + French</td>
+                                <td style="border: solid;">War + Strange, weird</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Severus Snape</td>
+                                <td style="border: solid;">Severus + Snape</td>
+                                <td style="border: solid;">Latin + English</td>
+                                <td style="border: solid;">Servant + Snape (a town in England)</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Rubeus Hagrid</td>
+                                <td style="border: solid;">Ruber + Hag-rid</td>
+                                <td style="border: solid;">Latin + Old English</td>
+                                <td style="border: solid;">Red + Indigestion</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Sybill Trelawney</td>
+                                <td style="border: solid;">Sibylla + Trelawny</td>
+                                <td style="border: solid;">Latin + Cornish</td>
+                                <td style="border: solid;">Fortune-teller + a person from a town with a church</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Alastor Moody</td>
+                                <td style="border: solid;">Alistair + Mood</td>
+                                <td style="border: solid;">Scottish + English</td>
+                                <td style="border: solid;">Defender of mankind + Not being in a good mood</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Voldemort</td>
+                                <td style="border: solid;">Vol de mort</td>
+                                <td style="border: solid;">French</td>
+                                <td style="border: solid;">Escaping death</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Gellert Grindelwald</td>
+                                <td style="border: solid;">Ger + Hard + Grendel + Wealdan</td>
+                                <td style="border: solid;">Germanic + Anglo-saxon + Old English</td>
+                                <td style="border: solid;">Spear + Brave + Grendel (character from the poem Beowulf) + To rule</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Godric Griffindor</td>
+                                <td style="border: solid;">Godrich + Gryphus + D'or</td>
+                                <td style="border: solid;">Old English + Late Latin + French</td>
+                                <td style="border: solid;">Good person + Griffin (a mythological creature) + Made of gold</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Horace Slughorn</td>
+                                <td style="border: solid;">hora + Sluagh-ghairm</td>
+                                <td style="border: solid;">Latin + Scottish Gaelic</td>
+                                <td style="border: solid;">Hour, time + War-cry</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Nymphadora Tonks</td>
+                                <td style="border: solid;">Numphē + Dóro + Tonk</td>
+                                <td style="border: solid;">Greek + English</td>
+                                <td style="border: solid;">Gift to the nymph + To hit hard</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Draco Malfoy</td>
+                                <td style="border: solid;">Drac + Mal foi</td>
+                                <td style="border: solid;">Latin + French</td>
+                                <td style="border: solid;">Dragon + Bad faith</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Gregory Goyle</td>
+                                <td style="border: solid;">Grēgórios + Gargouille</td>
+                                <td style="border: solid;">Greek + French</td>
+                                <td style="border: solid;">Watchful, alert + Gargoyle (a mythical figure carved in stone)</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Vincent Crabbe</td>
+                                <td style="border: solid;">Vincere + Crabby</td>
+                                <td style="border: solid;">Latin + English</td>
+                                <td style="border: solid;">To conquer + Irritable, fractious</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Kreacher</td>
+                                <td style="border: solid;">Kriechen</td>
+                                <td style="border: solid;">German</td>
+                                <td style="border: solid;">To creep, to crawl</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Nagini</td>
+                                <td style="border: solid;">Nagin</td>
+                                <td style="border: solid;">Urdu</td>
+                                <td style="border: solid;">Female snake</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Aragog</td>
+                                <td style="border: solid;">Aracne + Gog</td>
+                                <td style="border: solid;">Greek + Old English</td>
+                                <td style="border: solid;">Aracne (a woman from greek mythology) + Gog (a legendary giant)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="justify">
+                    <h4 class="text-center" id="TA">Textual Analysis</h4>
+                    <br>
+                    <div class="row">
+                    <div class="col-sm-8">
+                    <p>In order to analyze a text properly, we need to split this process in 2 minor ones, calles close reading and distant reading. The first one is the classic method: we start reading a book and try to store as much information as possible thanks to our memory, to figure out any detail and what could possibly happen next. Distant reading is a non-natural method instead: we indeed rely on a computer program to analyze the text for us, getting access to a way bigger database in a shorter time this way, with maximum precision on top of that.</p>
+                    <hr>
+                    <p>The question is: given that machines can work better than humans, can we really give up natural reading for methods that don't contemplate human emotions? Can we instruct a machine to locate and understand the huge range of human thoughts?</p>
+                    <hr>
+                    <p>The answer is no. We cannot ignore how significant our contribution is, but at the same time, we don't have the possibility to look at huge portions of information without losing something in the process. That's why we recommend to join the strenghts of both methods on behalf of a better textual analysis.</p>
+                    <hr>
+                    </div>
+                    <div class="col-sm-4 text-right"><img src="filler_09.png" style="width: 100%;"></div></div>
+                    <p>First, we wanted to find out the 20 characters which have been mentioned the most in the novel. To know the correct frequency of every character's name, we used <a href="https://www.browserling.com/" target="blank">Browserling</a>, an online word frequency calculator.</p>
+            
+                <table class="table table-striped text-center" style="border: solid;">
+                        <thead style="border: solid">
+                            <tr class="bg-warning" style="border: solid;">
+                                <th style="border: solid;">CHARACTER</th>
+                                <th style="border: solid;">WORD FREQUENCY</th>
+                            </tr>
+                        </thead>
+                        <tbody style="border: solid;">
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Harry</td>
+                                <td style="border: solid;">2642</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Hermione</td>
+                                <td style="border: solid;">1042</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Ron</td>
+                                <td style="border: solid;">994</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Dumbledore</td>
+                                <td style="border: solid;">448</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Voldemort</td>
+                                <td style="border: solid;">331</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Snape</td>
+                                <td style="border: solid;">238</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Lupin</td>
+                                <td style="border: solid;">144</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Hagrid</td>
+                                <td style="border: solid;">123</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Bill</td>
+                                <td style="border: solid;">106</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Luna</td>
+                                <td style="border: solid;">103</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Ginny</td>
+                                <td style="border: solid;">99</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Kreacher</td>
+                                <td style="border: solid;">97</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Xenophilius</td>
+                                <td style="border: solid;">90</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Malfoy</td>
+                                <td style="border: solid;">82</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Neville</td>
+                                <td style="border: solid;">71</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Fleur</td>
+                                <td style="border: solid;">70</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Bellatrix</td>
+                                <td style="border: solid;">69</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">McGonagall</td>
+                                <td style="border: solid;">66</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Aberforth</td>
+                                <td style="border: solid;">64</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Scrimgeour</td>
+                                <td style="border: solid;">63</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <p>After that, always with Browserling, we enumerated even the 10 most used spells, and who cast them.</p>
+                    <br>
+                    <table class="table table-striped text-center" style="border: solid;">
+                        <thead style="border: solid">
+                            <tr class="bg-warning" style="border: solid;">
+                                <th style="border: solid;">SPELL</th>
+                                <th style="border: solid;">SPELLCASTER</th>
+                                <th style="border: solid;">WORD FREQUENCY</th>
+                            </tr>
+                        </thead>
+                      <tr style="border: solid;">
+                                <td style="border: solid;">Accio</td>
+                                <td style="border: solid;">Hermione, Harry, random Death Eater</td>
+                                <td style="border: solid;">13</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Stupefy</td>
+                                <td style="border: solid;">Harry, Bellatrix</td>
+                                <td style="border: solid;">9</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Expelliarmus</td>
+                                <td style="border: solid;">Hermione, Harry, Ron</td>
+                                <td style="border: solid;">8</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Avada Kedavra</td>
+                                <td style="border: solid;">Voldemort, Crabbe, random Death Eater</td>
+                                <td style="border: solid;">8</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Lumos</td>
+                                <td style="border: solid;">Harry</td>
+                                <td style="border: solid;">6</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Expecto Patronum</td>
+                                <td style="border: solid;">Harry, Hermione, Aberforth, Snape</td>
+                                <td style="border: solid;">6</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Imperio</td>
+                                <td style="border: solid;">Harry, McGonagall</td>
+                                <td style="border: solid;">5</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Crucio</td>
+                                <td style="border: solid;">Bellatrix, Harry, Crabbe, Voldemort</td>
+                                <td style="border: solid;">4</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Obliviate</td>
+                                <td style="border: solid;">Hermione</td>
+                                <td style="border: solid;">2</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Wingardium Leviosa</td>
+                                <td style="border: solid;">Ron, Harry</td>
+                                <td style="border: solid;">2</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+                    <br>
+                    <div class="justify">
+                    <h4 class="text-center" id="IOT">Identification of Themes</h4>
+                    <br>
+                    <p>Now, taking into consideration 3 chapters (n. 3, 20 and 37) from the novel and using close reading only, we aimed to identify the traces of style that distinguish the story, with the help of <a href="https://www.litcharts.com/" target="blank">Litcharts</a>, an online literary resource that provides information about hundreds of titles. The main themes, according to a study carried out on the site, are:</p>
+                    <br>
+                    <ul class="list-group">
+    <li class="list-group-item list-group-item-warning">MORALITY AND REDEMPTION – People aren't born good or evil, but their choices make them take one path or the other</li>
+    <li class="list-group-item list-group-item-danger">SORROW AND GROWTH – Coming of age means taking responsibilities and facing every step of one's life as an adult, even if this means dealing with pain</li>
+    <li class="list-group-item list-group-item-success">KNOWLEDGE AND POWER – Any valuable information means power and a chance to prevail over the enemy, and underestimate information can have terrible consequences</li>
+    <li class="list-group-item list-group-item-dark">DEATH AND SENSE OF SACRIFICE – It is useless to fear death, accepting one's mortality corresponds to find a new meaning in one's life and in helping others</li>
+    <li class="list-group-item list-group-item-info">COMMUNITY AND FRIENDSHIP – Relying on friends is sometimes the best way to overcome adversities</li>
+  </ul>
+  <br>
+  <p>Here we can see every instance of a theme underlined with a different color, inside the paragraphs, and on the right every specific theme associated with one color.</p>
+
+<iframe src="ke/extraction.html" style="width: 100%; height: 860px; border: solid;"></iframe>
+
+
+
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Queries-->
+        <section class="page-section bg-light" id="QU">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">QUERIES</h2>
+                    <h3 class="section-subheading text-muted">The SPARQL language can help us extracting further information about our topic. Using it, we can rely on resources like <a href="https://wiki.dbpedia.org">Dbpedia</a> and <a href="http://dbpedia.org/sparql">Virtuoso SPARQL Query Editor</a> to widen our research.</h3>
+                    <table class="table table-striped text-center" style="border: solid;">
+                        <thead style="border: solid">
+                            <tr class="bg-warning" style="border: solid;">
+                                <th style="border: solid;">NATURAL LANGUAGE QUESTION</th>
+                                <th style="border: solid;">SPARQL QUERY</th>
+                                <th style="border: solid;">ANSWER</th>
+                            </tr>
+                        </thead>
+                      <tr style="border: solid;">
+                                <td style="border: solid;">Who is J. K. Rowling?</td>
+                                <td style="border: solid;">
+
+                                    PREFIX: 
+                                    <br>
+                                    <&lt;http://dbpedia.org/resource/>
+                                    <br>
+                                    PREFIX rdfs:
+                                    <br>
+                                    <&lt;http://www.w3.org/2000/01/rdf-schema#>
+                                    <br>
+                                    SELECT ?s WHERE {
+                                    <br>
+                                    ?s rdfs:label "J K
+                                    <br>
+                                    Rowling"@en
+                                    <br>
+                                    }
+                                </td>
+                                <td style="border: solid;">13</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">What is “Harry Potter and the Deathly Hallows”?</td>
+                                <td style="border: solid;">
+                                     PREFIX: 
+                                    <br>
+                                    <&lt;http://dbpedia.org/resource/>
+                                    <br>
+                                    PREFIX rdfs:
+                                    <br>
+                                    <&lt;http://www.w3.org/2000/01/rdf-schema#>
+                                    <br>
+                                    SELECT ?s WHERE {
+                                    <br>
+                                    ?s rdfs:label "Harry Potter 
+                                    <br>
+                                    and the Deathly 
+                                    <br>
+                                    Hallows"@en
+                                    <br>
+                                    }
+                                </td>
+                                <td style="border: solid;">9</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Which are the novels written by J. K. Rowling?</td>
+                                <td style="border: solid;">
+                                    select distinct ?y
+                                    <br>
+                                    WHERE { 
+                                    <br>
+                                    ?y skos:broader  
+                                    <br>
+                                    dbc:Novels_by_J._K._Rowli
+                                    <br>
+                                    ng.
+                                    <br>
+                                    }
+                                </td>
+                                <td style="border: solid;">8</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Which are the contemporary literature novels <br> similar to Harry Potter?</td>
+                                <td style="border: solid;">
+                                    select distinct ?y
+                                    <br>
+                                    WHERE { 
+                                    <br>
+                                    ?y skos:broader  
+                                    <br>
+                                    dbc:Contemporary_fantasy_
+                                    <br>
+                                    novels.
+                                    <br>
+                                    }
+                                </td>
+                                <td style="border: solid;">8</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Who are the people influenced by J. K. Rowling?</td>
+                                <td style="border: solid;">
+                                    select distinct ?y
+                                    <br>
+                                    WHERE { 
+                                    <br>
+                                    ?y a dbo:Person. 
+                                    <br>
+                                    ?y dbo:influencedBy 
+                                    <br>
+                                    dbr:J._K._Rowling.
+                                    <br>
+                                    }
+                                    <br>
+                                    LIMIT 100
+                                </td>
+                                <td style="border: solid;">6</td>
+                            </tr>
+                              <tr style="border: solid;">
+                                <td style="border: solid;">Who are the people born in Gloucestershire?</td>
+                                <td style="border: solid;">
+                                    select distinct ?y
+                                    <br>
+                                    WHERE { 
+                                    <br>
+                                    ?y a dbo:Person. 
+                                    <br>
+                                    ?y dbo:birthPlace  
+                                    <br>
+                                    dbr:Gloucestershire.
+                                    <br>
+                                    }
+                                    <br>
+                                    LIMIT 100
+                                </td>
+                                <td style="border: solid;">6</td>
+                            </tr>
+                            <tr style="border: solid;">
+                                <td style="border: solid;">Who are the female novelists <br>born during the 60's of the 20th century?</td>
+                                <td style="border: solid;">
+                                    select distinct ?y
+                                    <br>
+                                    WHERE { 
+                                    <br>
+                                    ?y a dbo:Person. 
+                                    <br>
+                                    ?y dbo:occupation   
+                                    <br>
+                                    dbr:Novelist.
+                                    <br>
+                                    ?y foaf:gender "female"@en.
+                                    <br>
+                                    ?y dbo:birthDate ?date
+                                    <br>
+                                    FILTER (?date > "1960-01-
+                                    <br>
+                                    01"^^xsd:date)
+                                    <br>
+                                    FILTER (?date < "1970-01-
+                                    <br>
+                                    01"^^xsd:date)
+                                    <br>
+                                    }
+                                    <br>
+                                    LIMIT 100
+                                </td>
+                                <td style="border: solid;">5</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <!-- Queries-->
+        <section class="page-section" id="ONT">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">ONTOLOGY</h2>
+                    <h3 class="section-subheading text-muted">When we represent an ontology, we want to show our knowledge about a topic to other people though specific ways. This ontology embodies a group of entities, their description and their mutual relationship.</h3>
+                </div>
+                <div class="justify">
+                    <div class="row">
+                        <div class="col-sm-4 text-left"><img src="filler_12.png" style="width: 100%;"></div>
+                    <div class="col-sm-8 justify">
+                    <p>Our ontology aimed to provide a wider understanding of all the relations between characters and events within Harry Potter and the Deathly Hallows, along with their use of enchantements. This has been possible through the union of all the processes carried out so far.
+                    <p>A tool which revealed fundamental for this step was <a href="https://protege.stanford.edu/">Protégé</a>, an environment for ontology development. Here we created classes and subclasses to gather the entities (characters and spells) we analyzed before.</p>
+                    <p> Now take a look at these charts.</p>
+                    <p> The ontology documentation generated with Protégé and visualized through <a href="http://vowl.visualdataweb.org/webvowl.html" target="blank">WebVOWL</a> is available <a href="http://www.visualdataweb.de/webvowl/#file=themaraudersgraph.owl" target="blank">HERE</a>.</p>
+                     <p>The graphical representation of the ontology, that has been possible thanks to the online service RDF Grapher, is available <a href="https://raw.githubusercontent.com/theMaraudersGraph/theMaraudersGraph/master/themaraudersgraph.png" target="blank">HERE</a>.</p>
+                    <p>The XML/OWL file is available for download <a href="themaraudersgraph.owl" download>HERE</a>.</p>
+                </div>
+            </div>
+                    
+            </div>
+        </section>
+        <!-- Ref-->
+        <section class="page-section bg-light" id="REF">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">REFERENCES</h2>
+                </div>
+                <br>
+                <div class="justify">
+                    <h4 class="text-center" id="HP">Harry Potter</h4>
+                    <br>
+                    <ol>
+                        <li><a href="https://harrypotter.fandom.com/wiki/List_of_spells" target="blank">https://harrypotter.fandom.com/wiki/List_of_spells</a></li>
+                        <li><a href="https://harrypotter.fandom.com/wiki/List_of_potions" target="blank">https://harrypotter.fandom.com/wiki/List_of_potions</a></li>
+                        <li><a href="https://www.insider.com/harry-potter-character-name-meaning-2017-4" target="blank">https://www.insider.com/harry-potter-character-name-meaning-2017-4</a></li>
+                        <li><a href="https://www.wizardingworld.com/features/etymology-behind-harry-potter-character-names" target="blank">https://www.wizardingworld.com/features/etymology-behind-harry-potter-character-names</a></li>
+                        <li><a href="https://www.mugglenet.com/harry-potter/little-things-harry-potter/name-origins-harry-potter/" target="blank">https://www.mugglenet.com/harry-potter/little-things-harry-potter/name-origins-harry-potter/</a></li>
+                        <li><a href="https://hobbylark.com/fandoms/Meanings-of-Latin-Names-in-Harry-Potter" target="blank">https://hobbylark.com/fandoms/Meanings-of-Latin-Names-in-Harry-Potter</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/J._K._Rowling" target="blank">https://en.wikipedia.org/wiki/J._K._Rowling</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows" target="blank">https://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Harry_Potter_influences_and_analogues" target="blank">https://en.wikipedia.org/wiki/Harry_Potter_influences_and_analogues</a></li>
+                        <li><a href="https://www.litcharts.com/lit/harry-potter-and-the-deathly-hallows/themes" target="blank">https://www.litcharts.com/lit/harry-potter-and-the-deathly-hallows/themes</a></li>
+                    </ol>
+                </div>
+                <br>
+                <div class="justify">
+                    <h4 class="text-center" id="UP">Useful Programs and Sites</h4>
+                    <br>
+                    <ol>
+                        <li><a href="https://www.browserling.com/tools/word-frequency" target="blank">https://www.browserling.com/tools/word-frequency</a></li>
+                        <li><a href="https://wordart.com/" target="blank">https://wordart.com/</a></li>
+                        <li><a href="https://protege.stanford.edu/products.php#web-protege" target="blank">https://protege.stanford.edu/products.php#web-protege</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCNYv4HA3WjV3gZGLfBehRWQ" target="blank">https://www.youtube.com/channel/UCNYv4HA3WjV3gZGLfBehRWQ</a></li>
+                        <li><a href="https://essepuntato.it/lode/" target="blank">https://essepuntato.it/lode/</a></li>
+                        <li><a href="http://www.visualdataweb.de/webvowl/" target="blank">http://www.visualdataweb.de/webvowl/</a></li>
+                        <li><a href="http://www.ldf.fi/service/rdf-grapher" target="blank">http://www.ldf.fi/service/rdf-grapher</a></li>
+                        <li><a href="http://rhizomik.net/html/redefer/rdf2svg-form/" target="blank">http://rhizomik.net/html/redefer/rdf2svg-form/</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- Team-->
+         <section class="page-section" id="TE">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/carla.jpg" alt="" />
+                            <h4>Carla Colona</h4>
+                            <p class="text-muted">...</p>
+                            </i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/luca.jpg" alt="" />
+                            <h4>Luca Tonti</h4>
+                            <p class="text-muted">...</p>
+                            </i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+            </div>
+        </section>
+        
+        <!-- Footer-->
+         <footer class="footer bg-light py-4">
+            <div class="container">
+                <div class="align-items-center">
+                  2020 Copyright © Carla Colona, Luca Tonti
+                    
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
